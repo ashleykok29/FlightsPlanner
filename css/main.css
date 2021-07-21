@@ -1,0 +1,38 @@
+#title{
+    position: absolute;
+    left: 150px;
+}
+
+.mdl-navigation__link{
+    cursor: pointer;
+}
+
+#mapHistory { 
+    width: 47vw; 
+    height: 60vh
+}
+
+#mapScheduled {
+    width: 47vw; 
+    height: 60vh
+}
+
+#mapHomePage {
+    width: 80vw;
+    height: 70vh
+}
+
+#mapAllRoutes {
+    width: 80vw;
+    height: 70vh
+}
+
+#mapSelectingLocations { 
+    width: 61vw; 
+    height: 70vh
+}
+
+#mapTripConfirmation { 
+    width: 55vw; 
+    height: 60vh
+}

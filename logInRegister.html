@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <title>Travel39</title>
+    </head>
+    <body>
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+              <!-- Top row, always visible -->
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <a href="homePage.html">
+                    <img src="img/logo.png" style="float:right;width:50px;height:50px;">
+                  </a>
+                <span class="mdl-layout-title" id="title">Travel39</span>
+                <div class="mdl-layout-spacer"></div>
+                <div>
+                </div>
+              </div>
+              <!-- Bottom row, not visible on scroll -->
+              <div class="mdl-layout__header-row">
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" onclick="loginRedirectScheduled()">View Scheduled Trips</a>
+                    <a class="mdl-navigation__link" onclick="loginRedirectHistory()">History</a>
+                    <a class="mdl-navigation__link" onclick="redirectAllRoutes()">View All Routes by Country</a>
+                </nav>
+              </div>
+            </header>
+            <main class="mdl-layout__content">
+                <div class="mdl-grid">
+                    <!-- Your content goes here -->
+                    <!--Empty grid -->
+                    <div class = "mdl-cell mdl-cell--3-col graybox">
+                    </div>
+
+                    <div class = "mdl-cell mdl-cell--4-col graybox">
+                        <h2>Register</h2>
+                        <div>
+                            First Name
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="firstName">
+                                <label class="mdl-textfield__label" for="sample1">First Name</label>
+                            </div>
+                        </div>
+                        <div>
+                            Last Name
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="lastName">
+                                <label class="mdl-textfield__label" for="sample1">Last Name</label>
+                            </div>
+                        </div>
+                        <div>
+                            Email
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="email">
+                                <label class="mdl-textfield__label" for="sample1">Email</label>
+                            </div>
+                        </div>
+                        <div>
+                            Password
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="password" id="password">
+                                <label class="mdl-textfield__label" for="sample1">Password</label>
+                            </div>
+                        </div>
+                        <div>
+                            Confirm Password
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="password" id="confirmPassword">
+                                <label class="mdl-textfield__label" for="sample1">Confirm Password</label>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick = "addNewUser()">
+                            Register
+                        </button>
+                    </div>
+
+                    <div class = "mdl-cell mdl-cell--4-col graybox">
+                        <h2>Login</h2>
+                        <div>
+                            Email
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="userEmail">
+                                <label class="mdl-textfield__label" for="sample1">Email</label>
+                            </div>
+                        </div>
+                        <div>
+                            Password
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="password" id="userPassword">
+                                <label class="mdl-textfield__label" for="sample1">Password</label>
+                            </div>
+                        </div>
+                        <br>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick = "login()">
+                                Login
+                            </button>
+                    </div>
+                    <!--Empty grid -->
+                    <div class = "mdl-cell mdl-cell--1-col graybox">
+                    </div>
+                </div>
+            </main>
+          </div>
+    </body>
+    <script src="js/shared.js"></script>
+    <script src="js/logInRegister.js"></script>
+</html>
